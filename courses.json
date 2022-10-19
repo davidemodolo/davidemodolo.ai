@@ -1,0 +1,18 @@
+[
+    {
+        "course": "Fundamentals of AI",
+        "progression": 0
+    },
+    {
+        "course": "Machine Learning",
+        "progression": 66
+    },
+    {
+        "course": "Law & Ethics in AI",
+        "progression": 100
+    },
+    {
+        "course": "Signal, Image & Video",
+        "progression": 100
+    }
+]

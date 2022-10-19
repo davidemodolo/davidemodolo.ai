@@ -1,0 +1,107 @@
+:root {
+    --bg-color: #333333;
+    --accent-color: #2fad10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: var(--bg-color);
+    font-family: 'Lato', sans-serif;
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: 1px white dotted;
+}
+
+.left {
+    width: 100%;
+    padding: 1%;
+    border: 1px greenyellow dotted;
+}
+
+.right {
+    padding: 1%;
+    border: 1px rebeccapurple dotted;
+}
+
+p {
+    font-size: 1.75em;
+    margin-top: 1%;
+    text-align: justify;
+    color: #C4C4C4;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+button {
+    font-size: 2em;
+    padding: 1%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.buttons {
+    text-align: center;
+}
+
+#contact {
+    align-self: end;
+}
+
+.toptext {
+    padding: 1%;
+}
+
+.projects {
+    padding: 1%;
+    margin-top: 2%;
+    border: 1px orange dotted;
+}
+
+.project:hover {
+    background-color: var(--accent-color);
+}
+
+.project {
+    width: 100%;
+    height: 15em;
+    margin-top: 0.75em;
+    cursor: pointer;
+    background-color: #828282;
+}
+
+.exam-list {
+    padding: 1%;
+    margin-top: 2%;
+    border: 1px red;
+}
+
+.exam {
+    width: 100%;
+    height: 10em;
+    margin-top: 0.75em;
+    cursor: pointer;
+    background-color: #828282;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.exam:hover {
+    background-color: var(--accent-color);
+}
+
+.desc-container {
+    display: flex;
+    flex-direction: row;
+}
