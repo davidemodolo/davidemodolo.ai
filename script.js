@@ -1,8 +1,10 @@
-const projects = 5;
-const exams = 6;
-//import projects_json from './projects.json';
+import projects_json from './projects.json' assert { type: 'json' };
 // log the projects_json length to the console
-//console.log(projects_json.length);
+const projects = projects_json.length;
+
+// same for the courses_json
+import courses_json from './courses.json' assert { type: 'json' };
+const exams = courses_json.length;
 
 
 function sendEmail() {
@@ -31,21 +33,11 @@ window.mobileCheck = function() {
 
 const div_projects = document.querySelector('.project-list');
 for (let i = 0; i < projects; i++) {
-    /*const htmlvalue = `<h2>Progetto ${i}</h2><br>
-    <div class= \"desc-container\">
-        <div class = \"desc\">
-            <p>desc</p> 
-        </div>
-        <div class = \"imgs\">
-            <p>imgs</p>
-        </div>
-    </div>
-`*/
-    const htmlvalue = `Progetto ${i}<br>Descrizione`
     const prj = document.createElement('div');
-    const prj_name = 'progetto ' + i;
+    const prj_name = projects_json[i]['project'];
     prj.classList.add('project');
     //prj.style.backgroundColor = '#00FF00'
+    const htmlvalue = `${prj_name}<br>Descrizione`
     prj.innerHTML = htmlvalue;
     prj.addEventListener('click', function() { console.log(prj_name) });
     div_projects.appendChild(prj);
@@ -56,10 +48,47 @@ for (let i = 0; i < projects; i++) {
 const div_exam = document.querySelector('.exam-list');
 for (let i = 0; i < exams; i++) {
 
-    const exm = document.createElement('div');
-    const exm_name = 'Esame ' + i;
+    const course = document.createElement('div');
+    const course_name = courses_json[i]['course'];
+    const progress = courses_json[i]['progression'];
+    // show the progress bar
+    const progress_bar = document.createElement('div');
+    // what is classlist?
+    progress_bar.classList.add('progress-bar');
+    progress_bar.style.width = `${progress}%`;
+    progress_bar.innerHTML = `${progress}%`;
+    // add a button to start the exam
+    const start_exam = document.createElement('button');
+    start_exam.classList.add('start-exam');
+    start_exam.innerHTML = 'Start Exam';
+    start_exam.addEventListener('click', function() { console.log(course_name) });
+    // add a button to see the exam
+    const see_exam = document.createElement('button');
+    see_exam.classList.add('see-exam');
+    see_exam.innerHTML = 'See Exam';
+    see_exam.addEventListener('click', function() { console.log(course_name) });
+    // add a button to see the exam
+    const see_results = document.createElement('button');
+    see_results.classList.add('see-results');
+    see_results.innerHTML = 'See Results';
+    see_results.addEventListener('click', function() { console.log(course_name) });
+    // append all the elements to the course div
+    course.appendChild(progress_bar);
+    course.appendChild(start_exam);
+    course.appendChild(see_exam);
+    course.appendChild(see_results);
+    // append the course div to the exam-list div
+    div_exam.appendChild(course);
+
+}
+
+
+
+
+
+
+    /*const exm_name = courses_json[i]['course'];
     exm.classList.add('exam');
     exm.innerHTML = `${exm_name}<br>Descrizione`;
     exm.addEventListener('click', function() { console.log(exm_name) });
-    div_exam.appendChild(exm);
-}
+    div_exam.appendChild(exm);*/
