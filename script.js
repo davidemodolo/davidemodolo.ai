@@ -1,5 +1,3 @@
-const projects = 5;
-const exams = 6;
 //import projects_json from './projects.json';
 // log the projects_json length to the console
 const projects = projects_json.length;
@@ -36,7 +34,7 @@ for (let i = 0; i < projects; i++) {
         </div>
     </div>
 `*/
-    const htmlvalue = `Progetto ${i}<br>Descrizione`
+    var htmlvalue = `Progetto ${i}<br>Descrizione`
     const prj = document.createElement('div');
     const prj_name = projects_json[i]['project'];
     prj.classList.add('project');
@@ -88,10 +86,10 @@ for (let i = 0; i < projects; i++) {
 
 const div_courses = document.querySelector('.courses-list');
 for (let i = 0; i < courses; i++) {
-    const course_name = courses_json[i]['course'];
+    var course_name = courses_json[i]['course'];
 
     const course = document.createElement('div');
-    const course_name = courses_json[i]['course'];
+    course_name = courses_json[i]['course'];
     const progress = courses_json[i]['progression'];
     // show the progress bar
     const progress_bar = document.createElement('div');
