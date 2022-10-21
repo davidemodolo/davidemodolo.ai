@@ -1,15 +1,25 @@
 :root {
     --bg-color: #333333;
     --accent-color: #2fad10;
+    --button-color: #FFFFFF;
+    --button-text-color: #000000;
 }
+
+/* 
+TODO:
+- style for progress bar
+- style for buttons
+
+*/
 
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
     color: white;
     background-color: var(--bg-color);
     font-family: 'Lato', sans-serif;
+    border-radius: 12px;
+    padding: auto;
 }
 
 #container {
@@ -46,10 +56,14 @@ h2 {
 }
 
 button {
-    font-size: 2em;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    font-size: 1.5em;
     padding: 1%;
     margin-right: 5%;
     margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
 .buttons {
@@ -70,6 +84,15 @@ button {
     border: 1px orange dotted;
 }
 
+.project-pics{
+    background-color: inherit;
+}
+.project-pic{
+    
+    width: 10%;
+    height: 10%;
+    border: 1px red dotted;
+}
 .project:hover {
     background-color: var(--accent-color);
 }
@@ -82,26 +105,33 @@ button {
     background-color: #828282;
 }
 
-.exam-list {
+.courses-list {
     padding: 1%;
     margin-top: 2%;
     border: 1px red;
 }
 
-.exam {
+.course {
     width: 100%;
     height: 10em;
     margin-top: 0.75em;
+    padding: 5%;
     cursor: pointer;
     background-color: #828282;
     font-family: 'Courier New', Courier, monospace;
 }
 
-.exam:hover {
+.course:hover {
     background-color: var(--accent-color);
 }
 
 .desc-container {
     display: flex;
     flex-direction: row;
+}
+
+.progress-bar{
+    padding-left: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

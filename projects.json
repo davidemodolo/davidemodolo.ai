@@ -1,13 +1,13 @@
 [
     {
         "project": "Healthy Plus (Android App)",
-        "github": "http://www.github.com",
+        "link": "http://www.github.com",
         "file": "/file.pdf",
         "pics": [
-            "1.jpg",
-            "2.jpg",
-            "3.jpg"
+            "resources\\project_pictures\\HealthyPlus\\1.png",
+            "resources\\project_pictures\\HealthyPlus\\2.png",
+            "resources\\project_pictures\\HealthyPlus\\3.jpg"
         ],
-        "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque id malesuada dignissim. Ac duis in ut ut amet bibendum a. Nibh elementum cursus dictum lacus. Purus varius consectetur a consequat non pellentesque."
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque id malesuada dignissim. Ac duis in ut ut amet bibendum a. Nibh elementum cursus dictum lacus. Purus varius consectetur a consequat non pellentesque."
     }
 ]
