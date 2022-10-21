@@ -1,4 +1,5 @@
-//import projects_json from './projects.json';
+import projects_json from './projects.json' assert { type: 'json' };
+
 // log the projects_json length to the console
 const projects = projects_json.length;
 
@@ -24,17 +25,6 @@ function sendEmail() {
 
 const div_projects = document.querySelector('.project-list');
 for (let i = 0; i < projects; i++) {
-    /*const htmlvalue = `<h2>Progetto ${i}</h2><br>
-    <div class= \"desc-container\">
-        <div class = \"desc\">
-            <p>desc</p> 
-        </div>
-        <div class = \"imgs\">
-            <p>imgs</p>
-        </div>
-    </div>
-`*/
-    var htmlvalue = `Progetto ${i}<br>Descrizione`
     const prj = document.createElement('div');
     const prj_name = projects_json[i]['project'];
     prj.classList.add('project');
@@ -121,11 +111,6 @@ for (let i = 0; i < courses; i++) {
     div_courses.appendChild(course);
 
 }
-
-
-
-
-
 
     /*const exm_name = courses_json[i]['course'];
     exm.classList.add('exam');
