@@ -89,14 +89,21 @@ button {
 }
 .project-pic{
     
-    width: 10%;
-    height: 10%;
+    width: 5%;
+    height: 5%;
     border: 1px red dotted;
+    transition: all .2s ease-in-out;
 }
+
+
 .project:hover {
     background-color: var(--accent-color);
 }
+/*enlarge pic on hover*/
+.project-pic:hover{ 
+    transform: scale(5); 
 
+}
 .project {
     width: 100%;
     height: 15em;
@@ -109,20 +116,28 @@ button {
     padding: 1%;
     margin-top: 2%;
     border: 1px red;
+    height: 100%;
 }
 
 .course {
+    margin: 1em;
     width: 100%;
-    height: 10em;
-    margin-top: 0.75em;
+    height: 5em;
     padding: 5%;
     cursor: pointer;
     background-color: #828282;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1.3em;
+    text-align: center;
 }
 
 .course:hover {
     background-color: var(--accent-color);
+}
+.course-progress{
+    padding: 2%;
+    margin-right: 5%;
+    font-size: 0.666em;
 }
 
 .desc-container {

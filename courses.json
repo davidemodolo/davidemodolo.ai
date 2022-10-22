@@ -1,18 +1,54 @@
 [
     {
         "course": "Fundamentals of AI",
-        "progression": 0
+        "progress": 0
     },
     {
         "course": "Machine Learning",
-        "progression": 50
+        "progress": 25
     },
     {
         "course": "Law & Ethics in AI",
-        "progression": 80
+        "progress": 100
     },
     {
         "course": "Signal, Image & Video",
-        "progression": 100
+        "progress": 100
+    },
+    {
+        "course": "AI for Finance",
+        "progress": 100
+    },
+    {
+        "course": "Artificial and Biological Neural Systems",
+        "progress": 0
+    },
+    {
+        "course": "Autonomous Software Agents",
+        "progress": 0
+    },
+    {
+        "course": "Natural Language Understanding",
+        "progress": 50
+    },
+    {
+        "course": "Automated Planning",
+        "progress": 0
+    },
+    {
+        "course": "High Performance Computing",
+        "progress": 0
+    },
+    {
+        "course": "Medical Imaging Diagnostic",
+        "progress": 0
+    },
+    {
+        "course": "Sensing and Radar Technology",
+        "progress": 0
+    },
+    {
+        "course": "Statistical Methods",
+        "progress": 0
     }
 ]
