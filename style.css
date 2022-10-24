@@ -26,18 +26,15 @@ TODO:
     width: 100%;
     display: flex;
     flex-direction: row;
-    border: 1px white dotted;
 }
 
 .left {
     width: 100%;
     padding: 1%;
-    border: 1px greenyellow dotted;
 }
 
 .right {
     padding: 1%;
-    border: 1px rebeccapurple dotted;
 }
 
 p {
@@ -79,9 +76,9 @@ button {
 }
 
 .projects {
+    border: #FFFFFF solid 2px;
     padding: 1%;
     margin-top: 2%;
-    border: 1px orange dotted;
 }
 
 .project-pics{
@@ -91,7 +88,6 @@ button {
     
     width: 5%;
     height: 5%;
-    border: 1px red dotted;
     transition: all .2s ease-in-out;
 }
 
@@ -113,16 +109,19 @@ button {
 }
 
 .courses-list {
-    padding: 1%;
+    border: #FFFFFF solid 2px;
+    padding: 5%;
     margin-top: 2%;
-    border: 1px red;
-    height: 100%;
+    height: 75%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .course {
-    margin: 1em;
+    margin-right: 1em;
+    margin-top: 1em;
     width: 100%;
-    height: 5em;
+    height: auto;
     padding: 5%;
     cursor: pointer;
     background-color: #828282;
