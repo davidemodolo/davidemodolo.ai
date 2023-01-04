@@ -112,9 +112,7 @@ button {
     border: #FFFFFF solid 2px;
     padding: 5%;
     margin-top: 2%;
-    height: 75%;
-    overflow-y: scroll;
-    overflow-x: hidden;
+    height: 100%;
 }
 
 .course {

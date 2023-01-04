@@ -1,6 +1,39 @@
 [
     {
-        "project": "Healthy Plus (Android App)",
+        "project": "Healthy Plus (Kotlin Android App)",
+        "link": "http://www.github.com",
+        "file": "/file.pdf",
+        "pics": [
+            "resources\\project_pictures\\HealthyPlus\\1.png",
+            "resources\\project_pictures\\HealthyPlus\\2.png",
+            "resources\\project_pictures\\HealthyPlus\\3.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque id malesuada dignissim. Ac duis in ut ut amet bibendum a. Nibh elementum cursus dictum lacus. Purus varius consectetur a consequat non pellentesque."
+    },
+    {
+        "project": "Insulyna (Flutter Android App)",
+        "link": "http://www.github.com",
+        "file": "/file.pdf",
+        "pics": [
+            "resources\\project_pictures\\HealthyPlus\\1.png",
+            "resources\\project_pictures\\HealthyPlus\\2.png",
+            "resources\\project_pictures\\HealthyPlus\\3.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque id malesuada dignissim. Ac duis in ut ut amet bibendum a. Nibh elementum cursus dictum lacus. Purus varius consectetur a consequat non pellentesque."
+    },
+    {
+        "project": "Image Morphing (Presentation and implementation)",
+        "link": "http://www.github.com",
+        "file": "/file.pdf",
+        "pics": [
+            "resources\\project_pictures\\HealthyPlus\\1.png",
+            "resources\\project_pictures\\HealthyPlus\\2.png",
+            "resources\\project_pictures\\HealthyPlus\\3.jpg"
+        ],
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At pellentesque id malesuada dignissim. Ac duis in ut ut amet bibendum a. Nibh elementum cursus dictum lacus. Purus varius consectetur a consequat non pellentesque."
+    },
+    {
+        "project": "Intent and Slot filling in joint models (NLU Project)",
         "link": "http://www.github.com",
         "file": "/file.pdf",
         "pics": [

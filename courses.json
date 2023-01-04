@@ -29,7 +29,7 @@
     },
     {
         "course": "Natural Language Understanding",
-        "progress": 50
+        "progress": 80
     },
     {
         "course": "Automated Planning",
@@ -49,6 +49,6 @@
     },
     {
         "course": "Statistical Methods",
-        "progress": 0
+        "progress": 100
     }
 ]
